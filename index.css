@@ -1,0 +1,9 @@
+table, th, td {
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  html{
+
+background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,199,252,0.17128858379289214) 100%); 
+  }
