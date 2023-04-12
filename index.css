@@ -1,9 +1,282 @@
-table, th, td {
-    border: 1px solid black;
-    border-radius: 10px;
-  }
-  html{
+* {
+  box-sizing: border-box;
+/* overflow-x: hidden; */
+}
 
-background: rgb(63,94,251);
-background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,199,252,0.17128858379289214) 100%); 
-  }
+body {
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+header {
+  background-color: #666;
+  text-align: center;
+  font-size: 35px;
+ 
+}
+
+.image{
+  background: url('./NeoHongKong.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  height: 70vh;
+  overflow-y: hidden;
+}
+
+.image h2{ 
+  margin-top: 25vh;
+  color: white;
+}
+
+
+.container-title{
+  text-align: center;
+}
+
+.container-title .en-tete{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+section {
+  background-color: #EEEEEE;
+  color:#636363;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5vw;
+  
+  text-align: justify;
+  padding-right: 4vw;
+  padding-left: 4vw; 
+  padding-top: 3vw;
+  padding-bottom: 3vw; 
+  
+}
+
+.line{
+  width: 200px ;
+  color: #e9e9e9;
+  border: solid 0.2px #e9e9e9;
+}
+/* ceci sert à créer un tableau */
+.grid-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 8% repeat(2,18%) 2% repeat(3,18%);
+  background-color: #666;
+  justify-items: center;
+}
+
+.grid-container .titre{
+  grid-column: 1 / span 2;
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 90%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  margin-top: 3vh;
+}
+
+.space{
+  grid-column: 1 / span 2;
+}
+
+.grid-container .col11{
+  background-image: url("./Tournoi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 70vh;
+  justify-self: end;
+}
+.grid-container .col12{
+  background-image: url("./Avanade\ names\ its\ first\ four\ Distinguished\ Engineers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 70vh;
+  justify-self: start;
+}
+.grid-container .col21{
+  background-image: url("./gamersassemblée.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 70vh;
+  justify-self: end;
+}
+.grid-container .col22{
+  background-image: url("./esports.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 70vh;
+  justify-self: start;
+}
+
+
+
+.grid-container .col31{
+  background-image: url("./VR.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  justify-self: end;
+ 
+  margin-top: 10px
+}
+
+.grid-container .col32{
+  background-color: white;
+  text-align:justify;
+  width: 100%;
+  padding-top: 10vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  height: 70vh;
+  margin-top: 10px;
+
+ 
+}
+.grid-container .col42{
+  background-image: url("./collectionner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  justify-self: start;
+}
+.grid-container .col41{
+ 
+  text-align: center;
+  padding-top: 10vh;
+  background-color: #808080;
+  height: 70vh;
+  width: 100%;
+  text-align:justify;
+  padding-top: 10vh;
+  padding-left: 10vw;
+  padding-right: 10vw;  
+}
+.grid-container .col51{
+  background-image: url("./collectiongaming.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  justify-self: end;
+}
+.grid-container .col52{
+  background-color: white;
+  text-align: center;
+  padding-top: 10vh;
+  background-color: white;
+  text-align:justify;
+  padding-top: 10vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  height: 70vh;
+
+} 
+
+
+footer {
+  background-color: #666;
+  color: white;
+}
+
+footer {
+  color: white;
+  font-size: 50px;
+  z-index: 0;
+}
+
+footer .logo {
+  padding: 1vw;
+  font-size: 2vw;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+}
+
+
+
+@media (max-width: 760px) {
+.grid-container{
+  grid-template-columns: 1fr;
+  grid-template-rows: 8% repeat(4,9%) 2% repeat(6,9%); 
+}
+
+.grid-container .titre{
+  grid-column: 1; 
+}
+.space{
+  grid-column: 1 ;
+}
+.grid-container .col11{
+  justify-self: center;
+}
+.grid-container .col12{
+  justify-self: center;
+}
+.grid-container .col21{
+  justify-self: center;
+}
+
+.grid-container .col22{
+  justify-self: center;
+}
+
+.grid-container .col31{
+  justify-self: center;
+  width: 90%;
+}
+
+.grid-container .col32{
+  justify-self: center;
+  width: 90%;
+}
+
+.grid-container .col41{
+  background-image: url("./collectionner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-self: center;
+  width: 90%;
+}
+
+.grid-container .col42{
+  background-image: none;
+  justify-self: center;
+  width: 90%;
+  text-align: center;
+  padding-top: 10vh;
+  background-color: #808080;
+  height: 70vh;
+  
+  text-align:justify;
+  padding-top: 10vh;
+  padding-left: 10vw;
+  padding-right: 10vw; 
+}
+
+.grid-container .col51{
+  justify-self: center;
+  width: 90%;
+}
+
+.grid-container .col52{
+  justify-self: center;
+  width: 90%;
+}
+}
