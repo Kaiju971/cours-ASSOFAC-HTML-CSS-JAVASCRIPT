@@ -158,7 +158,7 @@ section {
 }
 .grid-container .col41{
  
-  text-align: center;
+  text-align: center; color: #e9e9e9;
   padding-top: 10vh;
   background-color: #808080;
   height: 70vh;
@@ -212,6 +212,12 @@ footer .logo {
 
 
 @media (max-width: 760px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 4vw;
+    text-align: right;
+  }
+
+
 .grid-container{
   grid-template-columns: 1fr;
   grid-template-rows: 8% repeat(4,9%) 2% repeat(6,9%); 
@@ -253,6 +259,7 @@ footer .logo {
   background-size: cover;
   justify-self: center;
   width: 90%;
+  
 }
 
 .grid-container .col42{
@@ -261,7 +268,7 @@ footer .logo {
   width: 90%;
   text-align: center;
   padding-top: 10vh;
-  background-color: #808080;
+  background-color: #808080;color: #e9e9e9;
   height: 70vh;
   
   text-align:justify;
