@@ -99,12 +99,13 @@ section {
   justify-self: end;
 }
 .grid-container .col12{
-  background-image: url("./Avanade\ names\ its\ first\ four\ Distinguished\ Engineers.jpg");
+  /* background-image: url("./Avanade\ names\ its\ first\ four\ Distinguished\ Engineers.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 90%;
-  height: 70vh;
+  background-size: cover; */
+  width: 94.8%;
+  /* height: 70vh; */
   justify-self: start;
+
 }
 .grid-container .col21{
   background-image: url("./gamersassembly.jpg");
@@ -201,6 +202,9 @@ footer .logo {
   text-align: center;
 }
 
+@media (max-width: 560px) {
+  
+}
 
 
 @media (max-width: 760px) {
